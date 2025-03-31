@@ -100,7 +100,10 @@ header nav.menu a:hover {
 }
 
 /* ESTILO DA SEÇÃO SOBRE MIM */
-
+section.sobre-mim {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
 section.sobre-mim .flex {
   display: flex;
   flex-wrap: nowrap;
@@ -133,16 +136,25 @@ section.sobre-mim .flex {
     gap: 30px;
   }
 
-  .img-sobremim,
-  .txt-sobre-mim {
-    max-width: 80%;
-    width: 80%;
+  .img-sobremim {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .img-sobremim img {
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* Limita a altura no celular */
+    object-fit: cover;
+    border-radius: 10px;
   }
 
   .txt-sobre-mim {
+    max-width: 100%;
     text-align: left;
   }
 }
+
 /* BOTÕES SOCIAIS */
 .btn-social button {
   width: 60px;
