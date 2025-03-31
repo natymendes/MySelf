@@ -105,22 +105,38 @@ section.sobre-mim {
     box-shadow: 0 0 40px 10px #ffffff1d;
 }
 /* Estilo base para a seção 'sobre-mim' */
-.sobre-mim .flex {
+section.sobre-mim .flex {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 20px; /* Espaçamento entre a imagem e o texto */
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* Imagem */
+.img-sobremim {
+  flex: 1;
+  max-width: 400px;
 }
 
 .img-sobremim img {
   width: 100%;
-  max-width: 300px; /* Define um tamanho máximo para a imagem */
-  height: auto;
-  border-radius: 10px; /* Opcional: arredonda as bordas da imagem */
+  border-radius: 10px;
+  display: block;
 }
 
+/* Texto */
 .txt-sobre-mim {
-  flex: 1; /* Ocupa o espaço restante ao lado da imagem */
+  flex: 2;
+  min-width: 300px;
   text-align: justify;
+}
+
+/* Botões sociais dentro da mesma div, alinhados */
+.btn-social {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
 }
 
 /* Media Query para telas menores */
