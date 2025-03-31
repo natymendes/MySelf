@@ -134,8 +134,8 @@ header nav.menu a:hover {
 /* PORTFÓLIO */
 .portfolio .img-port {
   width: 100%;
-  max-width: 360px;
-  height: 460px;
+  max-width: 370px;
+  height: 470px;
   background-size: cover;
   background-position: center;
   border-radius: 20px;
@@ -303,7 +303,7 @@ footer a:hover {
   }
 
   .img-port {
-    width: 90%;
+    width: 100%;
   }
 
   .overlay {
