@@ -103,42 +103,46 @@ header nav.menu a:hover {
 
 section.sobre-mim .flex {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
   gap: 60px;
 }
 
 .img-sobremim {
-  flex: 1 1 400px;
+  flex: 1;
   max-width: 500px;
 }
 
 .img-sobremim img {
   width: 100%;
+  height: auto;
   border-radius: 10px;
   display: block;
 }
 
 .txt-sobre-mim {
-  flex: 1 1 400px;
+  flex: 1;
   max-width: 600px;
   color: #fff;
+  text-align: justify;
 }
-
-/* Responsivo para celular */
 @media (max-width: 768px) {
-  .section.sobre-mim .flex {
+  section.sobre-mim .flex {
     flex-direction: column;
+    gap: 30px;
   }
 
   .img-sobremim,
   .txt-sobre-mim {
-    width: 100%;
     max-width: 100%;
+    width: 100%;
+  }
+
+  .txt-sobre-mim {
+    text-align: left;
   }
 }
-
 /* BOTÕES SOCIAIS */
 .btn-social button {
   width: 60px;
