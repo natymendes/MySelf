@@ -134,8 +134,8 @@ section.sobre-mim .flex {
     text-align: justify;
 }
 .sobre-mim .img-sobremim img{
-    width: 120%;
-    max-width: 110%; /* Adicionando um valor máximo para evitar que a imagem fique muito grande */
+    width: 100%;
+    max-width: 100%; /* Adicionando um valor máximo para evitar que a imagem fique muito grande */
     display: block; /* Remover espaço extra abaixo da imagem */
     margin: 0 auto; /* Centralizar a imagem */
     position: relative;
@@ -209,7 +209,7 @@ section.sobre-mim .flex {
 }
 
 section.portfolio {
-    padding: 80px 4%;
+    padding: 80px 10%;
     box-shadow: 0 0 40px 10px #ffffff1d;
 }
 section.portfolio .flex {
