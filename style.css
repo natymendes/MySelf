@@ -29,32 +29,32 @@ span {
   gap: 30px;
 }
 
-.btn-social button {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: none;
-    background-color: #ffbb00;
-    font-size: 22px;
-    cursor: pointer;
-    margin: 0 5px;
-    transition: .2s;
-    margin: 10px 5px 0; /* Adiciona margem acima dos botões */
-    
+.btn-social {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  align-items: flex-start; /* alinha à esquerda */
 }
 
-.btn-contato button:hover,
-.btn-material:hover,
+.btn-social button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffbb00;
+  color: #111;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
 .btn-social button:hover {
   box-shadow: 0 0 10px #ffbb00;
   transform: scale(1.05);
-}
-
-.btn-social {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 /* CABEÇALHO */
