@@ -135,7 +135,7 @@ section.sobre-mim .flex {
 /* Botões sociais dentro da mesma div, alinhados */
 .btn-social {
   margin-top: 20px;
-  display: flex;
+  display: block;
   gap: 15px;
 }
 
