@@ -57,16 +57,22 @@ span {
   box-shadow: 0 0 10px #ffbb00;
   transform: scale(1.05);
 }
-
 @media (max-width: 768px) {
   .btn-social {
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: row;        /* LADO A LADO no mobile */
+    justify-content: center;    /* Centraliza horizontalmente */
     align-items: center;
-    gap: 12px; /* espaço entre os botões no mobile */
+    gap: 16px;                  /* Espaço entre os botões */
     margin-top: 20px;
   }
 }
+
+@media (max-width: 768px) {
+  .txt-sobre-mim {
+    text-align: center;
+  }
+}
+
 
 
 /* CABEÇALHO */
