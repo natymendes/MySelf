@@ -57,15 +57,17 @@ span {
   box-shadow: 0 0 10px #ffbb00;
   transform: scale(1.05);
 }
-/* NO CELULAR: lado a lado */
+
 @media (max-width: 768px) {
   .btn-social {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 12px; /* espaço entre os botões no mobile */
     margin-top: 20px;
   }
 }
+
 
 /* CABEÇALHO */
 header {
