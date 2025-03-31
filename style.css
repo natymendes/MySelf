@@ -356,21 +356,11 @@ footer a:hover {
   }
 /* BOTÕES SOCIAIS */
   /* BOTÕES SOCIAIS */
-.btn-social button {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  font-size: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .btn-social {
   display: flex;
-  flex-direction: column; 
-  align-items: flex-start;
-  gap: 20px;
+  justify-content: center;
+  gap: 15px; /* Espaçamento entre os botões */
   margin-top: 20px;
 }
 
@@ -384,20 +374,37 @@ footer a:hover {
   justify-content: center;
   background-color: #ffbb00;
   color: #111;
-  transition: 0.3s;
   border: none;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .btn-social button:hover {
   box-shadow: 0 0 10px #ffbb00;
   transform: scale(1.05);
 }
-  .btn-contato button {
-    width: auto;
+
+@media (max-width: 768px) {
+  .sobre-mim .flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
-  .overlay {
-    display: none;
+  .img-sobremim {
+    order: -1; /* Garante que a imagem apareça antes do texto */
+    max-width: 100%;
+  }
+
+  .img-sobremim img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .txt-sobre-mim {
+    max-width: 100%;
+    text-align: justify;
   }
 }
+
