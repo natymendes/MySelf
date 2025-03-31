@@ -12,8 +12,8 @@ body {
   line-height: 1.6;
 }
 
-span{
-  color:#ffbb00;
+span {
+  color: #ffbb00;
 }
 
 .interface {
@@ -51,6 +51,13 @@ span{
   transform: scale(1.05);
 }
 
+.btn-social {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 /* CABEÇALHO */
 header {
   padding: 40px 0;
@@ -77,6 +84,11 @@ header nav.menu a:hover {
   padding: 40px;
 }
 
+.topo-pagina .flex {
+  align-items: center;
+  gap: 40px;
+}
+
 .topo-pagina h1 {
   font-size: 3rem;
   color: #ffbb00;
@@ -89,6 +101,11 @@ header nav.menu a:hover {
 }
 
 /* SOBRE MIM */
+.sobre-mim .img-sobremim {
+  flex: 1;
+  max-width: 45%;
+}
+
 .sobre-mim .img-sobremim img {
   width: 100%;
   border-radius: 10px;
@@ -109,19 +126,10 @@ header nav.menu a:hover {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  margin: 10px 5px 0;
-  font-size: 28px;
+  font-size: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ffbb00;
-  color: #111;
-  transition: 0.3s;
-}
-
-.btn-social button:hover {
-  box-shadow: 0 0 10px #ffbb00;
-  transform: scale(1.05);
 }
 
 /* ESPECIALIDADES */
@@ -132,7 +140,6 @@ header nav.menu a:hover {
   text-align: center;
   flex: 1 1 300px;
   transition: 0.3s;
-  padding-bottom: 2px;
 }
 
 .especialidades-box i {
@@ -167,7 +174,6 @@ header nav.menu a:hover {
 .img-port {
   width: 100%;
   max-width: 360px;
-  margin: auto;
   border-radius: 20px;
   overflow: hidden;
   position: relative;
@@ -256,8 +262,7 @@ footer a:hover {
   .especialidades-box,
   .img-port {
     width: 90%;
-    max-width: 360px;
-    height: auto;
+    max-width: 100%;
   }
 
   .portfolio .flex {
@@ -266,11 +271,12 @@ footer a:hover {
   }
 
   .btn-social {
-    text-align: center;
+    flex-direction: row;
+    justify-content: center;
   }
 
   .btn-contato button {
-    width: 100%;
+    width: auto;
   }
 
   .overlay {
