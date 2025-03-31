@@ -252,6 +252,8 @@ footer a:hover {
   gap: 30px;
 }
 
+
+
 .img-port {
   width: 100%;
   max-width: 360px;
@@ -268,6 +270,7 @@ footer a:hover {
   width: 100%;
   height: auto;
   border-radius: 20px;
+  display: block;
 }
 
 .overlay {
