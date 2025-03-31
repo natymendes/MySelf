@@ -29,12 +29,13 @@ span {
   gap: 30px;
 }
 
+/* BOTÕES SOCIAIS */
 .btn-social {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
+  flex-direction: column; /* empilhado no desktop */
+  align-items: flex-start;
+  gap: 12px;
   margin-top: 20px;
-  align-items: flex-start; /* alinha à esquerda */
 }
 
 .btn-social button {
@@ -55,6 +56,15 @@ span {
 .btn-social button:hover {
   box-shadow: 0 0 10px #ffbb00;
   transform: scale(1.05);
+}
+/* NO CELULAR: lado a lado */
+@media (max-width: 768px) {
+  .btn-social {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
 }
 
 /* CABEÇALHO */
