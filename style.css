@@ -163,10 +163,10 @@ header nav.menu a:hover {
   padding: 80px 4%;
   box-shadow: 0 0 40px 10px #ffffff1d;
 }
-.portfolio h2{
+.titulo{
   text-align:center;
 }
-.portfolio h2 span{
+.titulo span{
   color: #ffbb00;
 }
 
