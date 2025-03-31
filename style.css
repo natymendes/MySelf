@@ -382,4 +382,22 @@ footer .line-footer p a {
   }
 }
 
+@media (max-width: 768px) {
+  .portfolio .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-port {
+    width: 90%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .bg-video {
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+  }
+}
 
