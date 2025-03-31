@@ -100,27 +100,49 @@ header nav.menu a:hover {
   color: #fff;
 }
 
-/* SOBRE MIM */
-.sobre-mim .img-sobremim {
-  flex: 1;
-  max-width: 45%;
-}
+/* ESTILO DA SEÇÃO SOBRE MIM */
 
-.sobre-mim .img-sobremim img {
-  width: 550px;
-  heigth: 400px;
-  border-radius: 10px;
+section.sobre-mim {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
 }
-
+section.sobre-mim {
+    padding: 80px 4%;
+}
+section.sobre-mim .flex {
+    align-items: center;
+    gap: 60px;
+}
 .sobre-mim .txt-sobre-mim {
-  flex: 1;
-  text-align: justify;
+    color: #fff;
 }
 
-.sobre-mim h2 span {
-  color: #ffbb00;
-  display: block;
+.sobre-mim .txt-sobre-mim h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
 }
+.sobre-mim .txt-sobre-mim h2 span {
+    color: #ffbb00;
+    display: block;
+}
+.sobre-mim .txt-sobre-mim p span {
+    color: #ffbb00;
+    display: block;
+}
+.sobre-mim .txt-sobre-mim p {
+    margin: 20px 0;
+    text-align: justify;
+}
+.sobre-mim .img-sobremim img{
+    width: 120%;
+    max-width: 110%; /* Adicionando um valor máximo para evitar que a imagem fique muito grande */
+    display: block; /* Remover espaço extra abaixo da imagem */
+    margin: 0 auto; /* Centralizar a imagem */
+    position: relative;
+    border-radius: 10px;
+}
+
 
 /* BOTÕES SOCIAIS */
 .btn-social button {
