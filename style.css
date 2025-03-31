@@ -70,6 +70,7 @@ span {
 @media (max-width: 768px) {
   .txt-sobre-mim {
     text-align: center;
+    font-size: 0.9rem;
   }
 }
 
