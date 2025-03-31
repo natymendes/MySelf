@@ -106,30 +106,30 @@ section.sobre-mim {
 }
 section.sobre-mim .flex {
   display: flex;
-  flex-wrap: nowrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 60px;
+  flex-wrap: wrap;
 }
 
 .img-sobremim {
-  flex: 1;
-  max-width: 500px;
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
 }
 
 .img-sobremim img {
   width: 100%;
+  max-width: 450px;
   height: auto;
   border-radius: 10px;
-  display: block;
 }
 
 .txt-sobre-mim {
-  flex: 1;
-  max-width: 600px;
+  flex: 1 1 55%;
   color: #fff;
-  text-align: justify;
 }
+
 @media (max-width: 768px) {
   section.sobre-mim .flex {
     flex-direction: column;
