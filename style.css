@@ -167,6 +167,10 @@ section.sobre-mim .flex {
 }
 
 /* ESPECIALIDADES */
+ section.especialidades {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffbb00;
+}
 .especialidades-box {
   background-color: #1a1a1a;
   padding: 30px;
