@@ -143,16 +143,19 @@ header nav.menu a:hover {
   overflow: hidden;
   flex: 1 1 300px;
 }
-
-.img-port video,
-.img-port img,
-.bg-video {
+.img-port {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 20px;
+  height: auto;
+  max-width: 360px; /* ou o valor máximo desejado */
+  margin: auto; /* centraliza o contêiner */
 }
 
+.img-port img,
+.img-port video {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
 .overlay,
 .overlay-text {
   position: absolute;
@@ -302,10 +305,11 @@ footer a:hover {
     align-items: center;
   }
 
+  @media (max-width: 768px) {
   .img-port {
-    width: 100%;
-    heigth: 460px;
+    max-width: 100%;
   }
+}
 
   .overlay {
     font-size: 16px;
