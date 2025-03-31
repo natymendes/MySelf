@@ -349,5 +349,37 @@ footer .line-footer p a {
     color: #fff;
 }
 
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .img-port {
+    width: 100%;
+    height: auto;
+  }
+
+  .especialidades .flex {
+    flex-direction: column;
+  }
+
+  .especialidades-box {
+    padding: 20px;
+  }
+
+  .topo-pagina .txt-topo-pagina h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .topo-pagina .txt-topo-pagina p {
+    font-size: 16px;
+  }
+
+  .img-sobremim img {
+    width: 100%;
+  }
+}
 
 
