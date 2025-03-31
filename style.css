@@ -300,22 +300,22 @@ footer a:hover {
 .img-port:hover .overlay {
   opacity: 1;
 }
-
-/* Media Queries para Responsividade */
+/* RESPONSIVO: empilha os blocos */
 @media (max-width: 768px) {
   .portfolio .flex {
     flex-direction: column;
     align-items: center;
   }
 
-  @media (max-width: 768px) {
   .img-port {
-    max-width: 100%;
+    width: 90%;
+  }
+
+  .overlay {
+    font-size: 1rem;
+    padding: 1rem;
   }
 }
 
-  .overlay {
-    font-size: 16px;
-  }
-}
+
 
