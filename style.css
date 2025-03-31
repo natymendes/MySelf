@@ -1,419 +1,240 @@
-/* ESTILOS GERAIS */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-
+/* RESET E FONTES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
+
 body {
-    background-color: #000;
-    height: 100vh;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
 }
+
 .interface {
-    max-width: 1280px;
-    margin: 0 auto;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 4%;
 }
+
 .flex {
-    display: flex;
-}
-.btn-contato button {
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #ffbb00;
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: .2s;
- 
-    
-}
-button:hover
-{
-    box-shadow:0px 0px 8px #ffbb00;
-    transform: scale(1.05);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
 }
 
-/*ESTILO DO CABEÇALHO(HEADER)*/
-header {
-    padding: 40px 4%;
-}
-header>.interface {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-header nav.menu a{
-    text-decoration: none;
-    color: #ffbb00;
-
-}
-header nav.menu a:hover {
-    color: #fff;
-    transform: scale(1.5);
-}
-
-header nav ul {
-    list-style-type: none;
-}
-
-header nav.menu ul li {
-    display: inline-block;
-    padding: 0 40px;
-}
-
-/* ESTILO DO TOPO DA PÁGINA */
-section.topo-pagina {
-    padding: 40px 4%;
-}
-section.topo-pagina .flex {
-    align-items: center;
-    justify-content: center;
-    gap: 90px;
-}
-.topo-pagina h1 {
-    color: #fff;
-    font-size: 42px;
-    line-height: 40px;
-}
-.topo-pagina .txt-topo-pagina h1 span {
-    color:#ffbb00;
-}
-.topo-pagina .txt-topo-pagina p span {
-    color:#ffbb00;
-}
-.topo-pagina .txt-topo-pagina p {
-    color: #fff;
-    margin: 50px 0;
-}
-.topo-pagina .img-topo-pagina img {
-    width: 420px;
-    position: relative;
-    animation: flutuar 2s ease-in-out infinite alternate;
-    border: 0px solid #ffbb00;
-    border-radius: 150px; 
-} 
-@keyframes flutuar {
-    0% {
-        top: 0;
-    }
-
-    100% {
-        top: 30px;
-    }
-}
-
-/* ESTILO DA SEÇÃO SOBRE MIM */
-
-section.sobre-mim {
-    padding: 80px 4%;
-    box-shadow: 0 0 40px 10px #ffffff1d;
-}
-section.sobre-mim {
-    padding: 80px 4%;
-}
-section.sobre-mim .flex {
-    align-items: center;
-    gap: 60px;
-}
-.sobre-mim .txt-sobre-mim {
-    color: #fff;
-}
-
-.sobre-mim .txt-sobre-mim h2{
-    font-size: 40px;
-    line-height: 40px;
-    margin-bottom: 30px;
-}
-.sobre-mim .txt-sobre-mim h2 span {
-    color: #ffbb00;
-    display: block;
-}
-.sobre-mim .txt-sobre-mim p span {
-    color: #ffbb00;
-    display: block;
-}
-.sobre-mim .txt-sobre-mim p {
-    margin: 20px 0;
-    text-align: justify;
-}
-.sobre-mim .img-sobremim img{
-    width: 120%;
-    max-width: 110%; /* Adicionando um valor máximo para evitar que a imagem fique muito grande */
-    display: block; /* Remover espaço extra abaixo da imagem */
-    margin: 0 auto; /* Centralizar a imagem */
-    position: relative;
-    border-radius: 10px;
-}
-
-
-/* ESTILO DOS BOTÕES SOCIAL */
+/* BOTÃO */
+.btn-contato button,
+.btn-material,
 .btn-social button {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: none;
-    background-color: #ffbb00;
-    font-size: 22px;
-    cursor: pointer;
-    margin: 0 5px;
-    transition: .2s;
-    margin: 10px 5px 0; /* Adiciona margem acima dos botões */
-    
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #ffbb00;
+  color: #111;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
- /* ESPECIALIDADES */
- section.especialidades {
-    padding: 80px 4%;
-    box-shadow: 0 0 40px 10px #ffbb00;
+.btn-contato button:hover,
+.btn-material:hover,
+.btn-social button:hover {
+  box-shadow: 0 0 10px #ffbb00;
+  transform: scale(1.05);
 }
- section.especialidades {
-    padding: 40px 4%;
+
+/* CABEÇALHO */
+header {
+  padding: 40px 0;
 }
-section.especialidades .flex {
-    gap: 60px;
+
+header .menu ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
 }
-.especialidades .especialidades-box {
-    color: #fff;
-    padding: 40px;
-    border-radius: 20px;
-    margin-top: 45px;
-    transition: .2s;
+
+header nav.menu a {
+  text-decoration: none;
+  color: #ffbb00;
+  transition: 0.3s;
 }
-.especialidades .especialidades-box i {
-    font-size: 70px;
-    color: #fff;
+
+header nav.menu a:hover {
+  color: #fff;
 }
-.especialidades .especialidades-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px #ffffff78;
+
+/* TOPO DA PÁGINA */
+.topo-pagina h1 {
+  font-size: 3rem;
+  color: #ffbb00;
+}
+
+.topo-pagina p {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* SOBRE MIM */
+.sobre-mim .img-sobremim img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.sobre-mim .txt-sobre-mim {
+  flex: 1;
+  text-align: justify;
+}
+
+.sobre-mim h2 span {
+  color: #ffbb00;
+  display: block;
+}
+
+/* BOTÕES SOCIAIS */
+.btn-social button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px 5px 0;
+  font-size: 20px;
+}
+
+/* ESPECIALIDADES */
+.especialidades-box {
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  flex: 1 1 300px;
+  transition: 0.3s;
+}
+
+.especialidades-box i {
+  font-size: 50px;
+  color: #ffbb00;
+  margin-bottom: 10px;
 }
 
 .especialidades-box h3 {
-    font-size: 20px;
-    margin: 15px 0;
-    color: #ffBB00;
+  color: #ffbb00;
+  margin-bottom: 10px;
 }
 
-.especialidades-box h3 span {
-    color: #ffbb00;
-}
-.especialidades .titulo {
-    font-size: 40px;
-    line-height: 40px;
-    margin: 15px 0 30px;
-    text-align: center; /* Alinha o texto ao centro */
-    color: #fff;
+.especialidades-box p {
+  color: #ccc;
+  font-size: 0.9rem;
 }
 
-.especialidades .titulo span {
-    color: #ffbb00;
-}
-.btn-material {
-    margin-top: 10px;
-    background-color: #FFD700;
-    color: #111;
-    padding: 10px 16px;
-    border: none;
-    border-radius: 8px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  .btn-material:hover {
-    background-color: #e6c200;
-    transform: scale(1.05);
-  }
-  
-
-section.portfolio {
-    padding: 80px 4%;
-    box-shadow: 0 0 40px 10px #ffffff1d;
-}
-section.portfolio .flex {
-    justify-content: space-around;
-    margin-top: 60px;
-}
-
-
-/* Aqui estão os códigos novos */
-.bg-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-    border-radius: 20px;
-    opacity: 0.8;
-  }
-  .img-port {
+/* PORTFÓLIO */
+.portfolio .img-port {
+  width: 100%;
+  max-width: 360px;
+  height: 460px;
   background-size: cover;
   background-position: center;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  flex: 1 1 300px;
 }
 
-  .img-port {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-    border-radius: 20px;
-  }
-  
-  .overlay-text {
-    position: absolute;
-    z-index: 2;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 1.4rem;
-    text-align: center;
-    padding: 1rem;
-    text-shadow: 0 0 10px #000;
-  }
-  
-
-
-
-
-
-/* Ate aqui */
-.img-port {
-    width: 360px;
-    height: 460px;
-    background-size: cover;
-    background-position: 100% 0%;
-    transition: 8s;
-    cursor: pointer;
-    border-radius: 40px;
-    position: relative;
+.img-port video,
+.img-port img,
+.bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
 }
+
+.overlay,
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1rem;
+  padding: 1rem;
+  text-align: center;
+  text-shadow: 0 0 10px #000;
+  z-index: 2;
+}
+
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000000b8;
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    font-weight: 600;
-    color: #fff;
-    opacity: 0;
-    transition: .5s;
-}
-.overlay:hover {
-    opacity: 1;
-}
-.portfolio .titulo {
-    font-size: 40px;
-    line-height: 40px;
-    margin: 15px 0 30px;
-    text-align: center; /* Alinha o texto ao centro */
-    color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.3s;
 }
 
-.portfolio .titulo span {
-    color: #ffbb00;
+.img-port:hover .overlay {
+  opacity: 1;
 }
 
-/* ESTILO DO RODAPÉ */
+/* RODAPÉ */
 footer {
-    padding: 40px 4%;
-    box-shadow: 0 0 40px 10px #ffffff1d;
-}
-.copy{
-    color:#fff;
-    text-align: center; /* Alinha o texto ao centro */
+  padding: 40px 4%;
+  border-top: 2px solid #00FF08;
+  text-align: center;
+  color: #fff;
 }
 
-footer .flex {
-    justify-content: space-between;
+footer a {
+  color: #fff;
+  text-decoration: none;
 }
 
-footer .line-footer {
-    padding: 20px 0;
-}
-.borda {
-    border-top: 2px solid #00FF08;
+footer a:hover {
+  text-decoration: underline;
 }
 
-footer .line-footer p i {
-    color: #00FF08;
-    font-size: 22px;
-}
-footer .line-footer p a {
-    color: #fff;
-}
-
+/* RESPONSIVO */
 @media (max-width: 768px) {
   .flex {
     flex-direction: column;
-    gap: 30px;
+    align-items: center;
   }
 
-  .img-port {
-    width: 100%;
-    height: auto;
+  .topo-pagina h1 {
+    font-size: 2rem;
+    text-align: center;
   }
 
-  .especialidades .flex {
+  .topo-pagina p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  header .menu ul {
     flex-direction: column;
+    gap: 20px;
+    align-items: center;
   }
 
-  .especialidades-box {
-    padding: 20px;
+  .especialidades-box,
+  .img-port {
+    width: 90%;
+    max-width: 100%;
   }
 
-  .topo-pagina .txt-topo-pagina h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-
-  .topo-pagina .txt-topo-pagina p {
-    font-size: 16px;
-  }
-
-  .img-sobremim img {
-    width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
   .portfolio .flex {
     flex-direction: column;
     align-items: center;
-    gap: 30px;
   }
 
-  .img-port {
-    width: 90%;
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 20px;
-    overflow: hidden;
+  .btn-social {
+    text-align: center;
   }
 
-  .img-port video,
-  .img-port img,
-  .img-port .bg-video {
+  .btn-contato button {
     width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 20px;
-  }
-
-  .overlay,
-  .overlay-text {
-    font-size: 16px;
-    padding: 1rem;
   }
 }
-
