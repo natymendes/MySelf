@@ -104,31 +104,37 @@ section.sobre-mim {
     padding: 80px 4%;
     box-shadow: 0 0 40px 10px #ffffff1d;
 }
-section.sobre-mim .flex {
+/* Estilo base para a seção 'sobre-mim' */
+.sobre-mim .flex {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 60px;
-  flex-wrap: wrap;
-}
-
-.img-sobremim {
-  flex: 1 1 40%;
-  display: flex;
-  justify-content: center;
+  gap: 20px; /* Espaçamento entre a imagem e o texto */
 }
 
 .img-sobremim img {
   width: 100%;
-  max-width: 450px;
+  max-width: 300px; /* Define um tamanho máximo para a imagem */
   height: auto;
-  border-radius: 10px;
+  border-radius: 10px; /* Opcional: arredonda as bordas da imagem */
 }
 
 .txt-sobre-mim {
-  flex: 1 1 55%;
-  color: #fff;
+  flex: 1; /* Ocupa o espaço restante ao lado da imagem */
+  text-align: justify;
 }
+
+/* Media Query para telas menores */
+@media (max-width: 768px) {
+  .sobre-mim .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .img-sobremim img {
+    max-width: 80%; /* Ajusta o tamanho da imagem para telas menores */
+  }
+}
+
 
 @media (max-width: 768px) {
   section.sobre-mim .flex {
