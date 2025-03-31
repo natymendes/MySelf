@@ -114,7 +114,7 @@ header nav.menu a:hover {
 /* ESTILO DA SEÇÃO SOBRE MIM */
 section.sobre-mim {
     padding: 80px 4%;
-    box-shadow: 0 0 40px 10px #ffffff1d;
+    box-shadow: 0 0 40px 10px #ffbb00;
 }
 /* Estilo base para a seção 'sobre-mim' */
 section.sobre-mim .flex {
