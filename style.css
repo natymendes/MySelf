@@ -34,7 +34,7 @@ span {
   display: flex;
   flex-direction: column; /* empilhado no desktop */
   align-items: flex-start;
-  gap: 12px;
+  gap: 16px;
   margin-top: 20px;
 }
 
