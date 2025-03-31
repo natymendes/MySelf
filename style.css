@@ -103,13 +103,27 @@ header nav.menu a:hover {
 }
 
 /* BOTÕES SOCIAIS */
+
 .btn-social button {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   margin: 10px 5px 0;
-  font-size: 20px;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffbb00;
+  color: #111;
+  transition: 0.3s;
 }
+
+.btn-social button:hover {
+  box-shadow: 0 0 10px #ffbb00;
+  transform: scale(1.05);
+}
+
+
 
 /* ESPECIALIDADES */
 .especialidades-box {
