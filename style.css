@@ -152,16 +152,6 @@ section.sobre-mim .flex {
   }
 }
 
-/* BOTÕES SOCIAIS */
-.btn-social button {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  font-size: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 /* ESPECIALIDADES */
 /* ESPECIALIDADES */
@@ -365,9 +355,20 @@ footer a:hover {
     justify-content: center;
   }
 /* BOTÕES SOCIAIS */
+  /* BOTÕES SOCIAIS */
+.btn-social button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .btn-social {
-  display: inline;
-  flex-direction: row; /* empilhado no desktop */
+  display: flex;
+  flex-direction: column; 
   align-items: flex-start;
   gap: 20px;
   margin-top: 20px;
