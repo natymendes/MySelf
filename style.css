@@ -152,8 +152,8 @@ header nav.menu a:hover {
 
 .img-port img,
 .img-port video {
-  width: 100%;
-  height: auto;
+  width: 360px;
+  height: 460px;
   object-fit: contain;
 }
 .overlay,
