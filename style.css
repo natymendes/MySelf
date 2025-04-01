@@ -96,7 +96,7 @@ header nav.menu a:hover {
 
 .sobre-mim .txt-sobre-mim h2 span {
   color: #ffbb00;
-  display: block;
+  display: inline;
 }
 
 .sobre-mim .txt-sobre-mim p span {
