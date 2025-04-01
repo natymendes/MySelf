@@ -74,7 +74,7 @@ header nav.menu a:hover {
 /* === SEÇÃO SOBRE MIM === */
 section.sobre-mim {
     padding: 80px 4%;
-    box-shadow: 0 0 40px 10px #ffffff1d;
+    box-shadow: 0 0 40px 10px #ffbb00;
 }
 section.sobre-mim {
     padding: 80px 4%;
@@ -119,6 +119,7 @@ section.sobre-mim .flex {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    display:none;
   }
 
   .img-sobremim {
