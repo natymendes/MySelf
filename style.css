@@ -72,9 +72,9 @@ header nav.menu a:hover {
 }
 
 /* === SEÇÃO SOBRE MIM === */
-section.sobre-mim {
+.sobre-mim {
     padding: 80px 4%;
-    box-shadow: 0 0 40px 10px #ffbb00;
+  box-shadow: 0 0 40px 10px #ffbb00;
 }
 section.sobre-mim {
     padding: 80px 4%;
@@ -167,7 +167,7 @@ section.especialidades .flex {
 
 .especialidades .especialidades-box:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px #ffffff78;
+  box-shadow: 0 0 20px #ffbb00;
 }
 
 .especialidades-box h3 {
