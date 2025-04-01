@@ -72,15 +72,17 @@ header nav.menu a:hover {
 }
 
 /* === SEÇÃO SOBRE MIM === */
-.sobre-mim {
-   padding: 80px 4%;
+/* SEÇÃO SOBRE MIM */
+section.sobre-mim {
+  padding: 80px 4%;
   box-shadow: 0 0 40px 10px #ffbb00;
 }
+
 section.sobre-mim .flex {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row; /* padrão: lado a lado */
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 40px;
 }
 
@@ -98,10 +100,33 @@ section.sobre-mim .flex {
 
 .txt-sobre-mim {
   flex: 2;
-  min-width: 300px;
   text-align: justify;
   color: #fff;
 }
+
+/* RESPONSIVO: empilha no mobile */
+@media (max-width: 768px) {
+  section.sobre-mim .flex {
+    flex-direction: column; /* imagem em cima, texto embaixo */
+    text-align: center;
+  }
+
+  .img-sobremim {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .img-sobremim img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .txt-sobre-mim {
+    text-align: left;
+  }
+}
+
 
 /* ESPECIALIDADES */
 section.especialidades {
@@ -306,23 +331,5 @@ footer .btn-social button:hover {
     align-items: center;
   }
 
-  .sobre-mim .flex {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .img-sobremim {
-    max-width: 100%;
-  }
-
-  .img-sobremim img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-
-  .txt-sobre-mim {
-    text-align: left;
-  }
+ 
 }
