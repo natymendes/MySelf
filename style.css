@@ -135,18 +135,18 @@ header nav.menu a:hover {
   }
 
   /* Mostra a versão mobile */
-  .img-sobremim.mobile {
-    display: block;
-    width: 80%;
-    max-width: 80%;
-    padding: 20px;
-  }
+ .img-sobremim.mobile {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
 
-  .img-sobremim.mobile img {
-    width: 80%;
-    height: auto;
-    border-radius: 10px;
-  }
+.img-sobremim.mobile img {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
+
 }
 
 /* ESPECIALIDADES */
