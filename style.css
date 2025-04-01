@@ -414,3 +414,55 @@ footer .btn-social button:hover {
     justify-content: center;
   }
 }
+
+/* ===== SEÇÃO SOBRE MIM ===== */
+.sobre-mim .flex {
+  display: flex;
+  flex-direction: row; /* lado a lado no desktop */
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.img-sobremim {
+  flex: 1;
+  max-width: 400px;
+}
+
+.img-sobremim img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+.txt-sobre-mim {
+  flex: 2;
+  text-align: justify;
+  color: #fff;
+}
+
+/* ===== RESPONSIVO: mobile ===== */
+@media (max-width: 768px) {
+  .sobre-mim .flex {
+    flex-direction: column; /* empilha no mobile */
+    align-items: center;
+    gap: 30px;
+  }
+
+  .img-sobremim {
+    max-width: 100%;
+  }
+
+  .img-sobremim img {
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .txt-sobre-mim {
+    text-align: left;
+    padding: 0 15px;
+  }
+}
+
