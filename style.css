@@ -331,19 +331,16 @@ footer a:hover {
     align-items: center;
   }
 
-  .btn-social {
-    flex-direction: row;
-    justify-content: center;
-  }
+
 /* BOTÕES SOCIAIS */
-footer .btn-social {
+ .btn-social {
   display: flex;
   justify-content: center;
   gap: 20px;
   margin-top: 30px;
 }
 
-footer .btn-social button {
+ .btn-social button {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -358,7 +355,7 @@ footer .btn-social button {
   transition: 0.3s;
 }
 
-footer .btn-social button:hover {
+ .btn-social button:hover {
   box-shadow: 0 0 10px #ffbb00;
   transform: scale(1.05);
 }
