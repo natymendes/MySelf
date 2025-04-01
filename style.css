@@ -108,10 +108,11 @@ header nav.menu a:hover {
   text-align: justify;
 }
 
-.sobre-mim .img-sobremim {
+.sobre-mim .img-sobremim.desktop {
   flex: 1;
   padding: 5px;
 }
+
 
 .sobre-mim .img-sobremim.desktop img {
   width: 750px;
