@@ -105,8 +105,8 @@ section.sobre-mim .flex {
     text-align: justify;
 }
 .sobre-mim .img-sobremim img{
-    width: 120%;
-    max-width: 110%; /* Adicionando um valor máximo para evitar que a imagem fique muito grande */
+    width: 100%;
+    max-width: 100%; /* Adicionando um valor máximo para evitar que a imagem fique muito grande */
     display: block; /* Remover espaço extra abaixo da imagem */
     margin: 0 auto; /* Centralizar a imagem */
     position: relative;
