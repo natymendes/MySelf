@@ -123,13 +123,13 @@ section.sobre-mim .flex {
   }
 
   .img-sobremim {
-    width: 100%;
-    max-width: 100%;
+    width: 90%;
+    max-width: 90%;
     padding: 20px;
   }
 
   .img-sobremim img {
-    width: 100%;
+    width: 90%;
     height: auto;
     border-radius: 10px;
     margin-bottom: 20px;
