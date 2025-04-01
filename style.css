@@ -115,10 +115,10 @@ header nav.menu a:hover {
 
 
 .sobre-mim .img-sobremim.desktop img {
-  width: 400px;
+  width: 450px;
   height: auto;
   display: block;
-  margin: 0 auto;
+  margin: 10 auto;
   border-radius: 10px;
 }
 
