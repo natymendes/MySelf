@@ -135,13 +135,13 @@ header nav.menu a:hover {
   /* Mostra a versão mobile */
   .img-sobremim.mobile {
     display: block;
-    width: 100%;
+    width: 80%;
     max-width: 100%;
     padding: 20px;
   }
 
   .img-sobremim.mobile img {
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 10px;
   }
