@@ -71,10 +71,10 @@ header nav.menu a:hover {
   color: #fff;
 }
 
-/* SEÇÃO SOBRE MIM */
+/* === SEÇÃO SOBRE MIM === */
 section.sobre-mim .flex {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   gap: 40px;
@@ -97,6 +97,32 @@ section.sobre-mim .flex {
   min-width: 300px;
   text-align: justify;
   color: #fff;
+}
+
+/* RESPONSIVO SEÇÃO SOBRE MIM */
+@media (max-width: 768px) {
+  section.sobre-mim .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-sobremim {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .img-sobremim img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .txt-sobre-mim {
+    width: 100%;
+    text-align: left;
+    padding: 0 10px;
+  }
 }
 
 /* ESPECIALIDADES */
@@ -169,25 +195,19 @@ section.especialidades .flex {
   box-shadow: 0 0 40px 10px #ffbb00;
 }
 
-.portfolio .titulo {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-}
-
 .portfolio .flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
 }
 
 .img-port {
   width: 100%;
   max-width: 360px;
-  position: relative;
-  overflow: hidden;
   border-radius: 20px;
+  overflow: hidden;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -197,9 +217,7 @@ section.especialidades .flex {
 .img-port video {
   width: 100%;
   height: auto;
-  object-fit: cover;
-  display: block;
-  border-radius: 20px;
+  object-fit: contain;
 }
 
 .overlay,
@@ -274,69 +292,4 @@ footer .btn-social button {
 footer .btn-social button:hover {
   box-shadow: 0 0 10px #ffbb00;
   transform: scale(1.05);
-}
-
-/* RESPONSIVO */
-@media (max-width: 768px) {
-  .flex {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .topo-pagina h1 {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  .topo-pagina p {
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  header .menu ul {
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-  }
-
-  .especialidades-box,
-  .img-port {
-    width: 90%;
-    max-width: 100%;
-  }
-
-  .portfolio .flex {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .sobre-mim .flex {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .img-sobremim {
-    width: 100%;
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .img-sobremim img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-
-  .txt-sobre-mim {
-    text-align: left;
-    width: 100%;
-    padding: 0 10px;
-  }
-
-  footer .btn-social {
-    flex-direction: row;
-    justify-content: center;
-  }
 }
