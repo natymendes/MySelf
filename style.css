@@ -98,7 +98,7 @@ header nav.menu a:hover {
   color: #fff;
 }
 @media (max-width: 768px) {
-  .sobre-mim {
+  .sobre-mim .flex {
     flex-direction: column;
     align-items: center;
   }
