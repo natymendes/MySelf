@@ -113,7 +113,7 @@ header nav.menu a:hover {
   padding: 5px;
 }
 
-.sobre-mim .img-sobremim img {
+.sobre-mim .img-sobremim.desktop img {
   width: 800px;
   height: auto;
   display: block;
@@ -121,30 +121,29 @@ header nav.menu a:hover {
   border-radius: 10px;
 }
 
-/* RESPONSIVO SEÇÃO SOBRE MIM */
+/* Oculta no mobile */
+.img-sobremim.mobile {
+  display: none;
+}
+
 @media (max-width: 768px) {
-  .sobre-mim .flex {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  /* Oculta no desktop */
+  .img-sobremim.desktop {
+    display: none;
   }
 
-  .img-sobremim {
-    width: 300px;
+  /* Mostra a versão mobile */
+  .img-sobremim.mobile {
+    display: block;
+    width: 100%;
     max-width: 100%;
-    padding: 5px;
+    padding: 20px;
   }
 
-  .img-sobremim img {
-    width: 300px;
+  .img-sobremim.mobile img {
+    width: 100%;
     height: auto;
     border-radius: 10px;
-    margin-bottom: 5px;
-  }
-
-  .txt-sobre-mim {
-    width: 100%;
-    padding: 0 10px;
   }
 }
 
