@@ -218,6 +218,17 @@ section.especialidades .flex {
   justify-content: center;
   gap: 30px;
 }
+.portfolio .titulo {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 15px 0 30px;
+    text-align: center; /* Alinha o texto ao centro */
+    color: #fff;
+}
+
+.portfolio .titulo span {
+    color: #ffbb00;
+}
 
 .img-port {
   width: 100%;
