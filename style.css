@@ -73,68 +73,71 @@ header nav.menu a:hover {
 
 /* === SEÇÃO SOBRE MIM === */
 .sobre-mim {
-    padding: 80px 4%;
+  padding: 80px 4%;
   box-shadow: 0 0 40px 10px #ffbb00;
 }
-section.sobre-mim {
-    padding: 80px 4%;
-}
-section.sobre-mim .flex {
+
+.sobre-mim .flex {
   display: flex;
-  flex-direction: row; /* adiciona essa linha para desktop */
+  flex-direction: row;
+  align-items: center;
+  gap: 60px;
 }
 
-section.sobre-mim .flex {
-    align-items: center;
-    gap: 60px;
-}
 .sobre-mim .txt-sobre-mim {
-    color: #fff;
+  color: #fff;
 }
 
-.sobre-mim .txt-sobre-mim h2{
-    font-size: 40px;
-    line-height: 40px;
-    margin-bottom: 50px;
+.sobre-mim .txt-sobre-mim h2 {
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 50px;
 }
+
 .sobre-mim .txt-sobre-mim h2 span {
-    color: #ffbb00;
-    display: block;
+  color: #ffbb00;
+  display: block;
 }
+
 .sobre-mim .txt-sobre-mim p span {
-    color: #ffbb00;
-    display: block;
+  color: #ffbb00;
+  display: block;
 }
+
 .sobre-mim .txt-sobre-mim p {
-    margin: 20px 0;
-    text-align: justify;
+  margin: 20px 0;
+  text-align: justify;
 }
-.sobre-mim .img-sobremim img{
-    width: 90%;
-    max-width: 90%; /* Adicionando um valor máximo para evitar que a imagem fique muito grande */
-    display: block; /* Remover espaço extra abaixo da imagem */
-    margin: 0 auto; /* Centralizar a imagem */
-    position: relative;
-    border-radius: 10px;
+
+.sobre-mim .img-sobremim {
+  width: 100%;
+  padding: 10px;
+}
+
+.sobre-mim .img-sobremim img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
 }
 
 /* RESPONSIVO SEÇÃO SOBRE MIM */
 @media (max-width: 768px) {
-  section.sobre-mim .flex {
+  .sobre-mim .flex {
     flex-direction: column;
     align-items: center;
     text-align: center;
-
   }
 
   .img-sobremim {
-    width: 90%;
-    max-width: 90%;
+    width: 100%;
+    max-width: 100%;
     padding: 20px;
   }
 
   .img-sobremim img {
-    width: 90%;
+    width: 100%;
     height: auto;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -223,16 +226,17 @@ section.especialidades .flex {
   justify-content: center;
   gap: 30px;
 }
+
 .portfolio .titulo {
-    font-size: 40px;
-    line-height: 40px;
-    margin: 15px 0 30px;
-    text-align: center; /* Alinha o texto ao centro */
-    color: #fff;
+  font-size: 40px;
+  line-height: 40px;
+  margin: 15px 0 30px;
+  text-align: center;
+  color: #fff;
 }
 
 .portfolio .titulo span {
-    color: #ffbb00;
+  color: #ffbb00;
 }
 
 .img-port {
