@@ -111,7 +111,7 @@ header nav.menu a:hover {
 
 .sobre-mim .img-sobremim {
   width: 80%;
-  padding: 10px;
+  padding: 5px;
 }
 
 .sobre-mim .img-sobremim img {
@@ -133,14 +133,14 @@ header nav.menu a:hover {
   .img-sobremim {
     width: 100%;
     max-width: 100%;
-    padding: 20px;
+    padding: 5px;
   }
 
   .img-sobremim img {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
 
   .txt-sobre-mim {
