@@ -332,6 +332,12 @@ footer .btn-social button:hover {
   transform: scale(1.05);
 }
 
+/* === SEÇÃO SOBRE MIM === */
+.sobre-mim {
+  padding: 40px 4%;
+  box-shadow: 0 0 40px 10px #ffbb00;
+}
+
 .sobre-mim .flex {
   display: flex;
   flex-direction: column;
@@ -342,6 +348,73 @@ footer .btn-social button:hover {
 @media (min-width: 769px) {
   .sobre-mim .flex {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.sobre-mim .txt-sobre-mim {
+  color: #fff;
+  flex: 1;
+}
+
+.sobre-mim .txt-sobre-mim h2 {
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 50px;
+}
+
+.sobre-mim .txt-sobre-mim h2 span {
+  color: #ffbb00;
+}
+
+.sobre-mim .txt-sobre-mim p span {
+  color: #ffbb00;
+}
+
+.sobre-mim .txt-sobre-mim p {
+  margin: 20px 0;
+  text-align: justify;
+}
+
+.sobre-mim .img-sobremim {
+  width: 80%;
+  padding: 5px;
+  flex: 1;
+}
+
+.sobre-mim .img-sobremim img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/* RESPONSIVO SEÇÃO SOBRE MIM */
+@media (max-width: 768px) {
+  .sobre-mim .flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .img-sobremim {
+    width: 100%;
+    max-width: 100%;
+    padding: 5px;
+  }
+
+  .img-sobremim img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 5px;
+  }
+
+  .txt-sobre-mim {
+    width: 100%;
+    text-align: left;
+    padding: 0 10px;
   }
 }
