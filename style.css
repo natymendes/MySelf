@@ -72,7 +72,7 @@ header nav.menu a:hover {
 }
 
 /* === SEÇÃO SOBRE MIM === */
-section.sobre-mim .flex {
+/* section.sobre-mim .flex {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -97,7 +97,79 @@ section.sobre-mim .flex {
   min-width: 300px;
   text-align: justify;
   color: #fff;
+} */
+section.sobre-mim .flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
 }
+
+/* Imagem */
+.img-sobremim {
+  flex: 1;
+  max-width: 400px;
+}
+
+.img-sobremim img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+/* Texto */
+.txt-sobre-mim {
+  flex: 2;
+  min-width: 300px;
+  text-align: justify;
+}
+
+/* Botões sociais dentro da mesma div, alinhados */
+.btn-social {
+  margin-top: 20px;
+  display: block;
+  gap: 15px;
+}
+
+/* Media Query para telas menores */
+@media (max-width: 768px) {
+  .sobre-mim .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .img-sobremim img {
+    max-width: 80%; /* Ajusta o tamanho da imagem para telas menores */
+  }
+}
+
+
+@media (max-width: 768px) {
+  section.sobre-mim .flex {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .img-sobremim {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .img-sobremim img {
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* Limita a altura no celular */
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .txt-sobre-mim {
+    max-width: 100%;
+    text-align: left;
+  }
+}
+
 
 /* RESPONSIVO SEÇÃO SOBRE MIM */
 @media (max-width: 768px) {
