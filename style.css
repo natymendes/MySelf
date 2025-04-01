@@ -72,32 +72,45 @@ header nav.menu a:hover {
 }
 
 /* === SEÇÃO SOBRE MIM === */
+section.sobre-mim {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+section.sobre-mim {
+    padding: 80px 4%;
+}
 section.sobre-mim .flex {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
+    align-items: center;
+    gap: 60px;
+}
+.sobre-mim .txt-sobre-mim {
+    color: #fff;
 }
 
-.img-sobremim {
-  flex: 1;
-  max-width: 400px;
-  padding: 10px;
+.sobre-mim .txt-sobre-mim h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
 }
-
-.img-sobremim img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  display: block;
+.sobre-mim .txt-sobre-mim h2 span {
+    color: #ffbb00;
+    display: block;
 }
-
-.txt-sobre-mim {
-  flex: 2;
-  min-width: 300px;
-  text-align: justify;
-  color: #fff;
+.sobre-mim .txt-sobre-mim p span {
+    color: #ffbb00;
+    display: block;
+}
+.sobre-mim .txt-sobre-mim p {
+    margin: 20px 0;
+    text-align: justify;
+}
+.sobre-mim .img-sobremim img{
+    width: 120%;
+    max-width: 110%; /* Adicionando um valor máximo para evitar que a imagem fique muito grande */
+    display: block; /* Remover espaço extra abaixo da imagem */
+    margin: 0 auto; /* Centralizar a imagem */
+    position: relative;
+    border-radius: 10px;
 }
 
 /* RESPONSIVO SEÇÃO SOBRE MIM */
