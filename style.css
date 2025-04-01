@@ -115,13 +115,16 @@ header nav.menu a:hover {
   padding: 5px;
 }
 
+
+  
 .sobre-mim .img-sobremim img {
-  width: 80%;
-  max-width: 80%;
+  width: 300px;
+  height: auto;
   display: block;
   margin: 0 auto;
   border-radius: 10px;
 }
+
 
 /* RESPONSIVO SEÇÃO SOBRE MIM */
 @media (max-width: 768px) {
