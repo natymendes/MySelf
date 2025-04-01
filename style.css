@@ -331,3 +331,17 @@ footer .btn-social button:hover {
   box-shadow: 0 0 10px #ffbb00;
   transform: scale(1.05);
 }
+
+.sobre-mim .flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+@media (min-width: 769px) {
+  .sobre-mim .flex {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
