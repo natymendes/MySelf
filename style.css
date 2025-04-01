@@ -281,7 +281,7 @@ footer .btn-social {
 footer .btn-social button {
   width: 60px;
   height: 60px;
-  border-radius: 50%;
+  border-radius: 30%;
   font-size: 26px;
   display: flex;
   align-items: center;
