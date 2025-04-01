@@ -137,7 +137,7 @@ header nav.menu a:hover {
   .img-sobremim.mobile {
     display: block;
     width: 80%;
-    max-width: 100%;
+    max-width: 80%;
     padding: 20px;
   }
 
