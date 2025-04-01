@@ -52,8 +52,9 @@ header nav.menu a:hover {
 
 /* TOPO DA PÁGINA */
 .topo-pagina {
-  padding: 40px;
+  padding: 40px 0 10px; /* top: 40px, sides: 0, bottom: 0 */
 }
+
 
 .topo-pagina .flex {
   align-items: center;
